@@ -11,7 +11,7 @@ A modern, responsive, and animated Design Agency Homepage built with Next.js App
 - **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
 - **Animations:** [Framer Motion](https://www.framer.com/motion/)
 - **Icons:** [Lucide React](https://lucide.dev/)
-- **Language:** TypeScript
+- **Language:** JavaScript (JSX)
 - **Deployment:** Recommended on Vercel
 
 ## ✨ Features Implemented
@@ -21,7 +21,7 @@ A modern, responsive, and animated Design Agency Homepage built with Next.js App
 4. **Contact Section:** Functional UI for a contact form with simulated loading/success states.
 5. **Bonus / Additional Features Added:**
    - **Framer Motion Animations:** Scroll-triggered animations for all sections to make the site feel premium and dynamic.
-   - **SEO Metadata:** Added relevant page metadata in `layout.tsx` to ensure search engine visibility.
+   - **SEO Metadata:** Added relevant page metadata in `layout.jsx` to ensure search engine visibility.
    - **Responsive Navigation Bar:** Sticky top navigation that blurs on scroll, with a functional mobile hamburger menu.
    - **Image Optimization:** Used Next.js built-in `<Image />` component for automatic optimization and responsive sizing.
 
@@ -30,16 +30,16 @@ The code is structured modularly for maintainability and scalability. All sectio
 ```text
 src/
 ├── app/
-│   ├── layout.tsx         # Root layout with Navbar, Footer, and SEO metadata
-│   ├── page.tsx           # Main homepage stitching all sections together
+│   ├── layout.jsx         # Root layout with Navbar, Footer, and SEO metadata
+│   ├── page.jsx           # Main homepage stitching all sections together
 │   └── globals.css        # Global CSS and Tailwind directives
 └── components/
-    ├── Navbar.tsx         # Responsive top navigation
-    ├── Hero.tsx           # Hero section 
-    ├── Services.tsx       # Services overview cards
-    ├── Portfolio.tsx      # Project gallery
-    ├── Contact.tsx        # Contact form with validation UI
-    └── Footer.tsx         # Standard footer
+    ├── Navbar.jsx         # Responsive top navigation
+    ├── Hero.jsx           # Hero section 
+    ├── Services.jsx       # Services overview cards
+    ├── Portfolio.jsx      # Project gallery
+    ├── Contact.jsx        # Contact form with validation UI
+    └── Footer.jsx         # Standard footer
 ```
 
 ## ⚙️ Setup Instructions
