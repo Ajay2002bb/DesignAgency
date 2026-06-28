@@ -31,7 +31,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white relative border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
+    <section id="contact" className="py-24 bg-slate-50 dark:bg-transparent text-slate-900 dark:text-white relative border-t border-slate-200 dark:border-zinc-800 transition-colors duration-300">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           
@@ -42,22 +42,22 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-6">Ready to start a project?</h2>
-            <p className="text-slate-600 dark:text-slate-400 text-lg mb-10 leading-relaxed">
+            <p className="text-slate-600 dark:text-zinc-400 text-lg mb-10 leading-relaxed">
               Drop us a line to discuss your requirements. We're currently taking on new clients for upcoming quarters.
             </p>
             
             <div className="space-y-6">
               <div className="flex flex-col">
                 <span className="text-sm text-slate-500 uppercase tracking-wider font-semibold mb-1">Email Us</span>
-                <a href="mailto:siva@gmail.com" className="text-xl font-medium hover:text-blue-400 transition-colors">siva@gmail.com</a>
+                <a href="mailto:ajay@gmail.com" className="text-xl font-medium hover:text-emerald-400 transition-colors">ajay@gmail.com</a>
               </div>
               <div className="flex flex-col">
                 <span className="text-sm text-slate-500 uppercase tracking-wider font-semibold mb-1">Call Us</span>
-                <a href="tel:+1234567890" className="text-xl font-medium hover:text-blue-400 transition-colors">+1 (234) 567-890</a>
+                <a href="tel:+1234567890" className="text-xl font-medium hover:text-emerald-400 transition-colors">+1 (234) 567-890</a>
               </div>
               <div className="flex flex-col">
                 <span className="text-sm text-slate-500 uppercase tracking-wider font-semibold mb-1">Visit Us</span>
-                <p className="text-xl font-medium text-slate-700 dark:text-slate-300">Madurai, Tamil Nadu, India</p>
+                <p className="text-xl font-medium text-slate-700 dark:text-zinc-300">Tamil Nadu, India</p>
               </div>
             </div>
           </motion.div>
@@ -67,7 +67,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-white dark:bg-slate-800/50 p-8 md:p-10 rounded-3xl border border-slate-200 dark:border-slate-700/50"
+            className="bg-white dark:bg-zinc-800/50 p-8 md:p-10 rounded-3xl border border-slate-200 dark:border-zinc-700/50"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -79,7 +79,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required 
-                  className="w-full bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                  className="w-full bg-slate-50 dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all"
                   placeholder="John Doe"
                 />
               </div>
@@ -93,7 +93,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required 
-                  className="w-full bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                  className="w-full bg-slate-50 dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all"
                   placeholder="john@example.com"
                 />
               </div>
@@ -107,7 +107,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required 
-                  className="w-full bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none"
+                  className="w-full bg-slate-50 dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all resize-none"
                   placeholder="Tell us about your project..."
                 />
               </div>
@@ -115,7 +115,7 @@ export default function Contact() {
               <button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
                   <span className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin"></span>

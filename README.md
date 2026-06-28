@@ -3,9 +3,8 @@
 A modern, responsive, and animated Design Agency Homepage built with Next.js App Router as a task-based evaluation for the Frontend Developer position.
 
 ## 🚀 Live Demo & Repository
-- **GitHub Repository:** https://github.com/Sivavg/design-agency
-- **Live Deployment (Vercel):** https://weboinagency.netlify.app/
-
+- **GitHub Repository:** 
+- **Live Deployment (Vercel):** 
 ## 🛠️ Tech Stack Used
 - **Framework:** [Next.js 15](https://nextjs.org/) (App Router, React 19)
 - **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
@@ -71,5 +70,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 *Thank you for reviewing my submission. I look forward to the technical discussion!*
 
-Author : Siva
+Author : Ajay
 

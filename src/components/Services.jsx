@@ -5,7 +5,7 @@ import { Paintbrush, Code, Megaphone, Smartphone } from "lucide-react";
 
 const services = [
   {
-    icon: <Paintbrush className="w-8 h-8 text-blue-500" />,
+    icon: <Paintbrush className="w-8 h-8 text-emerald-500" />,
     title: "UI/UX Design",
     description: "Data-driven UI/UX design that prioritizes user retention and converts visitors into loyal customers."
   },
@@ -47,7 +47,7 @@ const itemVariants = {
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white relative transition-colors duration-300">
+    <section id="services" className="py-24 bg-slate-50 dark:bg-transparent text-slate-900 dark:text-white relative transition-colors duration-300">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h2 
@@ -57,16 +57,16 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             className="text-3xl md:text-5xl font-bold mb-4"
           >
-            Our Expertise
+            Core Capabilities
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-slate-600 dark:text-slate-400 text-lg"
+            className="text-slate-600 dark:text-zinc-400 text-lg"
           >
-            Everything you need to launch, scale, and maintain your digital products under one roof.
+            We deliver tailored solutions that empower your business to thrive in a competitive digital landscape.
           </motion.p>
         </div>
 
@@ -81,13 +81,13 @@ export default function Services() {
             <motion.div 
               key={index}
               variants={itemVariants}
-              className="group bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/50 p-8 rounded-2xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10"
+              className="group bg-white dark:bg-zinc-800/50 border border-slate-200 dark:border-zinc-700/50 p-8 rounded-2xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-emerald-500/10"
             >
-              <div className="mb-6 p-4 bg-slate-100 dark:bg-slate-900/50 rounded-xl inline-block group-hover:scale-110 transition-transform duration-300">
+              <div className="mb-6 p-4 bg-slate-100 dark:bg-zinc-900/50 rounded-xl inline-block group-hover:scale-110 transition-transform duration-300">
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+              <p className="text-slate-600 dark:text-zinc-400 leading-relaxed">
                 {service.description}
               </p>
             </motion.div>
